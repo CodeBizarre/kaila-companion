@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "kaila_companion"
+version = "0.0.1"
+description = "Companion app for the Kaila TTRPG"
+authors = ["CodeBizarre <https://github.com/CodeBizarre>"]
+license = "GNU AGPLv3"
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+pythonnet = [
+    { version = ">=2.5<2.6", platform = "win32" }
+]
+cefpython3 = [
+    { version = ">=66.0", platform = "win32" }
+]
+pywebview = [
+    { version = ">=3.4<3.5", platform = "darwin" },
+    { version = ">=3.4<3.5", platform = "win32", extras=["cef"] },
+    { version = ">=3.4<3.5", platform = "linux", extras=["qt"] }
+]
+sanic = ">=20.12<21"
+Hypercorn = ">=0.11<0.12"
+spells = ">=0.0.2"
+
+[tool.poetry.dev-dependencies]
+poetry = ">=1.1"
+flake8 = ">=3.8.4"
+pytest = ">=6.2.1"
+pytest-cov = ">=2.10"
+wheel = ">=0.36"
+Nuitka = ">=0.6"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

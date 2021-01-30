@@ -1,0 +1,169 @@
+/*
+        dark: background: #21242D;
+        light: background: #2A2D39;
+        highlight: #9664BD; Analog: 6A64BD
+*/
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+
+    display: flex;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    height: 100%;
+    margin: 0px;
+
+    color: #EFEFEF;
+    background: #2A2D39;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+
+    height: 100%;
+    width: 14ch;
+    text-align: center;
+
+    background: #21242D;
+    box-shadow: 1px 2px 5px #262626;
+}
+
+.sidebar h3 {
+    text-align: center;
+    font-weight: 500;
+}
+
+.sidebar a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.sidebar span {
+    padding: 10px;
+
+    background: #21242D;
+
+    transition: background 0.35s;
+    transition: color 0.35s;
+}
+
+.sidebar span:hover {
+    transition: background 0.25s;
+    background: #2A2D39;
+}
+
+.sidebar span.selection {
+    background: #2A2D39;
+}
+
+.container {
+    text-align: center;
+    flex-grow: 1;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 0px;
+}
+
+.container h2 {
+    margin-bottom: -0.5px;
+}
+
+.topbar {
+    position: relative;
+    background-color: #9664BD;
+    text-align: center;
+    padding: 1px;
+    box-shadow: 1px 2px 5px #262626;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.topbar p {
+    margin: 8px;
+}
+
+.content {
+    flex-grow: 1;
+    overflow-y: auto;
+
+    padding: 20px;
+}
+
+.content div {
+    margin-bottom: 16px;
+}
+
+.post {
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    max-width: 720px;
+    margin: 0 auto;
+
+    border: 2.5px solid #21242D;
+    box-shadow: 1px 2px 5px #262626;
+}
+
+.post h2 {
+    text-align: center;
+    font-weight: 500;
+
+    margin: 0px;
+}
+
+.post hr {
+    border: 2px solid #21242D;
+}
+
+.post hr.small-hr {
+    border: 1px solid #21242D;
+}
+
+.post ul {
+    text-align: left;
+}
+
+.post p {
+    text-align: left;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.post a {
+    text-decoration: none;
+    color: #6A64BD;
+}
+
+.post a:hover {
+    transition: color 0.25s;
+    color: #9664BD;
+}
+
+.post a:visited {
+    color: #9664BD;
+}
+
+.post .footer {
+    font-size: 12px;
+}
+
+#about p {
+    text-align: center;
+}
+
+#about ul {
+    text-align: center;
+}
+
+#about li {
+    text-align: center;
+    text-decoration: none;
+}
